@@ -1,68 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Futbol</title>
+    <title>Roster - Top Club</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Luis Miguel, Juan Manuel, Jeronimo">
-    <meta name="keywords" content="Futbol, Liga futbol, estadisticas futbol, Liga Colombiana">
-    <meta name="description" content="Esta pagina muestra todas las estadisticas de cada uno de los jugadores de futbol">
+    <meta name="author" content="Julio Herna Zuluaga, Oscar Mauricio Patiño">
+    <meta name="keywords" content="Basquetball, Liga basquetball, estadisticas basqutball, Liga Colombiana">
+    <meta name="description" content="Pagina encargada de la visualizacion de estadisticas deportivas, pertenecientes a la liga de basquetball">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <!-- Logo -->
-      <div id="logo">
-        <img src="images/Sin título-1.png" alt="">
-      </div>
-      <!-- Contact Information -->
-      <div id="contacto">
-        <span class="material-symbols-outlined">alternate_email</span><h3>contact@topclub.com</h3>
-        <span class="material-symbols-outlined">call</span><h3>+1 325 53 86 42</h3>
-        <span class="material-symbols-outlined">pin_drop</span><h3> 27 Orlando St, Portland</h3>
-      </div>
-      <!-- Registration and Login -->
-      <div id="registro">
-        <h3><a href="#">Buy Tickets</a></h3>
-        <h3><a href="#">Login</a></h3>
-        <h3><a href="#">Register</a></h3>
-        <span class="material-symbols-outlined">shopping_cart</span>
-      </div>
-      <!-- Search Bar -->
-      <div id="search">
-        <h5>Search...</h5>
-        <span class="material-symbols-outlined">search</span>
-      </div>
-      <!-- Navigation Menu -->
-      <nav id="menu">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">TEAM</a></li>
-          <li><a href="#">SOCCER</a></li>
-          <li><a href="#">PAGES</a></li>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">PURCHASE</a></li>
-        </ul>
-      </nav>
+        <div class="logo">
+            <img src="path_to_logo.png" alt="Top Club Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Sportspress</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Purchase</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="botones">
-      <h2>TOP SCORERS</h2>
-      <script src="botones.js"></script>
-      <div id="search-container">
-        <input type="text" id="searchBar" placeholder="Buscar por nombre jugador...">
-      </div>
-      <div id="cuadrado">
-        <span class="material-symbols-outlined">search</span>
-      </div>
-      <!-- Filtering Buttons -->
-      <div id="filter-buttons">
-        <button class="boton" id="show-all"><h4>Mostrar Todos</h4></button>
-        <button class="boton" id="show-odd"><h4>Pintar Pares</h4></button>
-        <button class="boton" id="show-even"><h4>Pintar Impares</h4></button>
-        <button class="boton" id="show-first-ten"><h4>Traer de 1 a 10</h4></button>
-        <button class="boton" id="show-second-ten"><h4>Traer de 11 a 20</h4></button>
-      </div>
-    </section>
-  </body>
+    <main>
+        <section class="roster">
+            <h1>Roster</h1>
+            <input type="text" placeholder="Buscar por nombre jugador...">
+            <div class="buttons">
+                <button>Pintar Pares</button>
+                <button>Pintar Impares</button>
+                <button>Traer de 1 a 10</button>
+                <button>Traer de 11 a 20</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Player</th>
+                        <th>Team</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>03</td>
+                        <td>Kevin Harrell</td>
+                        <td>Top Club</td>
+                        <td>Guard</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>James Fletcher</td>
+                        <td>Top Club</td>
+                        <td>Center</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Jeff Montes</td>
+                        <td>Top Club</td>
+                        <td>Forward-Guard</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Bryan Warner</td>
+                        <td>Top Club</td>
+                        <td>Forward-Center</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>Scott Dale</td>
+                        <td>Top Club</td>
+                        <td>Forward</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>Noah Jones</td>
+                        <td>Top Club</td>
+                        <td>Guard</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="social-icons">
+                <a href="#"><img src="path_to_twitter_icon.png" alt="Twitter"></a>
+                <a href="#"><img src="path_to_pinterest_icon.png" alt="Pinterest"></a>
+                <a href="#"><img src="path_to_reddit_icon.png" alt="Reddit"></a>
+                <a href="#"><img src="path_to_tumblr_icon.png" alt="Tumblr"></a>
+                <a href="#"><img src="path_to_email_icon.png" alt="Email"></a>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
+
